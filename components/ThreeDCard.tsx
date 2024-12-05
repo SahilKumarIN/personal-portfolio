@@ -17,9 +17,8 @@ export function ThreeDCardDemo(data: Params) {
   const {
     projectName,
     projectDescription,
-    projectLink,
+
     projectImage,
-    techStack,
   } = data;
   return (
     <CardContainer className="inter-var">

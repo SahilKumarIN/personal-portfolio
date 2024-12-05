@@ -31,7 +31,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-2xl md:text-sm font-bold mb-8">
-            St. Teresa's School , Bhagalpur
+            St. Teresa&apos;s School , Bhagalpur
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Completed secondary and senior secondary education with PCM +
