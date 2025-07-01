@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,120 +8,129 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/sahil.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-	html {
-		scroll-behavior: smooth;
-	}
+  html {
+    scroll-behavior: smooth;
+  }
 
-	body {
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		background-color: #0f172a;
-		color: #e2e8f0;
-		line-height: 1.6;
-	}
+  body {
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+  }
 
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
-	.section {
-		padding: 5rem 0;
-	}
+  .section {
+    padding: 5rem 0;
+  }
 
-	.section-title {
-		font-size: 2.5rem;
-		font-weight: 700;
-		text-align: center;
-		margin-bottom: 3rem;
-		background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-	}
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-	.btn {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.75rem 1.5rem;
-		border-radius: 0.5rem;
-		font-weight: 500;
-		text-decoration: none;
-		transition: all 0.3s ease;
-		border: none;
-		cursor: pointer;
-	}
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
 
-	.btn-primary {
-		background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-		color: white;
-	}
+  .btn-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+  }
 
-	.btn-primary:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-	}
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+  }
 
-	.btn-outline {
-		border: 2px solid #3b82f6;
-		color: #3b82f6;
-		background: transparent;
-	}
+  .btn-outline {
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    background: transparent;
+  }
 
-	.btn-outline:hover {
-		background: #3b82f6;
-		color: white;
-	}
+  .btn-outline:hover {
+    background: #3b82f6;
+    color: white;
+  }
 
-	.card {
-		background: rgba(30, 41, 59, 0.5);
-		border: 1px solid rgba(71, 85, 105, 0.3);
-		border-radius: 1rem;
-		padding: 2rem;
-		backdrop-filter: blur(10px);
-		transition: all 0.3s ease;
-	}
+  .card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
 
-	.card:hover {
-		transform: translateY(-5px);
-		border-color: #3b82f6;
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-	}
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
 
-	@media (max-width: 768px) {
-		.section {
-			padding: 3rem 0;
-		}
-		
-		.section-title {
-			font-size: 2rem;
-		}
-		
-		.container {
-			padding: 0 1rem;
-		}
-	}
+  @media (max-width: 768px) {
+    .section {
+      padding: 3rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .container {
+      padding: 0 1rem;
+    }
+  }
 </style>
