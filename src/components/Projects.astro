@@ -1,0 +1,248 @@
+<section id="projects" class="section">
+	<div class="container">
+		<h2 class="section-title">Featured Projects</h2>
+		<div class="projects-grid">
+			<div class="project-card card">
+				<div class="project-image">
+					<img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600" alt="FinanceTracker App" />
+					<div class="project-overlay">
+						<div class="project-links">
+							<a href="#" class="project-link">Live Demo</a>
+							<a href="#" class="project-link">GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project-content">
+					<h3 class="project-title">FinanceTracker Pro</h3>
+					<p class="project-description">
+						A comprehensive personal finance management app built with React Native. Features include expense tracking, budget planning, and financial insights with beautiful charts and analytics.
+					</p>
+					<div class="project-tech">
+						<span class="tech-tag">React Native</span>
+						<span class="tech-tag">TypeScript</span>
+						<span class="tech-tag">Redux</span>
+						<span class="tech-tag">Firebase</span>
+					</div>
+					<div class="project-stats">
+						<span class="stat">50K+ Downloads</span>
+						<span class="stat">4.8⭐ Rating</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card card">
+				<div class="project-image">
+					<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="FitnessPal App" />
+					<div class="project-overlay">
+						<div class="project-links">
+							<a href="#" class="project-link">Live Demo</a>
+							<a href="#" class="project-link">GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project-content">
+					<h3 class="project-title">FitnessPal</h3>
+					<p class="project-description">
+						A social fitness app that connects users with workout buddies, tracks progress, and provides personalized fitness recommendations. Built with Flutter for cross-platform compatibility.
+					</p>
+					<div class="project-tech">
+						<span class="tech-tag">Flutter</span>
+						<span class="tech-tag">Dart</span>
+						<span class="tech-tag">Supabase</span>
+						<span class="tech-tag">Provider</span>
+					</div>
+					<div class="project-stats">
+						<span class="stat">30K+ Downloads</span>
+						<span class="stat">4.6⭐ Rating</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card card">
+				<div class="project-image">
+					<img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600" alt="TaskMaster App" />
+					<div class="project-overlay">
+						<div class="project-links">
+							<a href="#" class="project-link">Live Demo</a>
+							<a href="#" class="project-link">GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project-content">
+					<h3 class="project-title">TaskMaster</h3>
+					<p class="project-description">
+						A productivity app with advanced task management features, team collaboration tools, and AI-powered insights. Native iOS app built with SwiftUI and modern iOS frameworks.
+					</p>
+					<div class="project-tech">
+						<span class="tech-tag">Swift</span>
+						<span class="tech-tag">SwiftUI</span>
+						<span class="tech-tag">Core Data</span>
+						<span class="tech-tag">CloudKit</span>
+					</div>
+					<div class="project-stats">
+						<span class="stat">20K+ Downloads</span>
+						<span class="stat">4.9⭐ Rating</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card card">
+				<div class="project-image">
+					<img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ShopEasy App" />
+					<div class="project-overlay">
+						<div class="project-links">
+							<a href="#" class="project-link">Live Demo</a>
+							<a href="#" class="project-link">GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project-content">
+					<h3 class="project-title">ShopEasy</h3>
+					<p class="project-description">
+						An e-commerce mobile app with AR try-on features, personalized recommendations, and seamless checkout experience. Optimized for both iOS and Android platforms.
+					</p>
+					<div class="project-tech">
+						<span class="tech-tag">React Native</span>
+						<span class="tech-tag">ARKit</span>
+						<span class="tech-tag">Node.js</span>
+						<span class="tech-tag">Stripe</span>
+					</div>
+					<div class="project-stats">
+						<span class="stat">100K+ Downloads</span>
+						<span class="stat">4.7⭐ Rating</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.project-card {
+		padding: 0;
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+	.project-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+	}
+
+	.project-image {
+		position: relative;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.project-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.project-card:hover .project-image img {
+		transform: scale(1.1);
+	}
+
+	.project-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.project-card:hover .project-overlay {
+		opacity: 1;
+	}
+
+	.project-links {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.project-link {
+		color: white;
+		text-decoration: none;
+		padding: 0.5rem 1rem;
+		border: 2px solid white;
+		border-radius: 0.5rem;
+		font-weight: 500;
+		transition: all 0.3s ease;
+	}
+
+	.project-link:hover {
+		background: white;
+		color: #000;
+	}
+
+	.project-content {
+		padding: 1.5rem;
+	}
+
+	.project-title {
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: #e2e8f0;
+	}
+
+	.project-description {
+		color: #94a3b8;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.project-tech {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.tech-tag {
+		background: rgba(59, 130, 246, 0.1);
+		color: #3b82f6;
+		padding: 0.3rem 0.8rem;
+		border-radius: 1rem;
+		font-size: 0.8rem;
+		font-weight: 500;
+		border: 1px solid rgba(59, 130, 246, 0.3);
+	}
+
+	.project-stats {
+		display: flex;
+		gap: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.stat {
+		color: #64748b;
+		font-weight: 500;
+	}
+
+	@media (max-width: 768px) {
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.project-links {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>
